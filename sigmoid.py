@@ -6,4 +6,3 @@ def sigmoid(x: list, y:list,b:float) -> np.ndarray | float:
     sx = 1/(1+math.e)^value
     return sx
 
-  
