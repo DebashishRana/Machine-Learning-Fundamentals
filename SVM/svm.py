@@ -29,3 +29,6 @@ class Support_Vector_Machine:
                 else:
                     self.weights = self.weights - self.learning_rate * (self.lambda_param * self.weights - y_[i] * X[i])
                     self.bias = self.bias + self.learning_rate * y_[i]
+
+    def predict(self, X):
+        return np.sign(X @ self.weights + self.bias)
